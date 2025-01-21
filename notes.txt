@@ -1,0 +1,27 @@
+***********
+Asynchrnous in javascript:
+
+-- to perform multiple task in js
+
+Methods:
+1.setTimeout () - it is a web api .used to perform async operation at spectified time out
+syntax: setTimeOut(callbackfn,timeout)
+
+2.setInterval() : it is a web api .used to perform async operation at 
+syntax: setInterval(callbackfn,timeout)
+
+2.promise - is an object which represents eventual completion.
+	states of promise:
+	1.pending state
+	2.fulfilled state
+	3.promise state
+syntax:-
+	new
+
+-actual wat to excetute promise is instance Methods
+	then() :- it is used to excetute 
+	catch():-
+	finally():-
+
+4.async & await
+note:-by default, js is synchronous(single threaded - can be performed single task at a time).
