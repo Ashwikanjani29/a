@@ -25,3 +25,6 @@ syntax:-
 
 4.async & await
 note:-by default, js is synchronous(single threaded - can be performed single task at a time).
+
+building blocks og html is tags
+
