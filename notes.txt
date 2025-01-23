@@ -63,3 +63,8 @@ DOM Methods:
 
 
 6.document.querySelectorAll(".class"):selects multiple elemtnts
+
+
+innerText ; is used to manipulate the plain text
+
+innerHTML : used to add property to add and remove
