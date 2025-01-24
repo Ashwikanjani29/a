@@ -67,4 +67,17 @@ DOM Methods:
 
 innerText ; is used to manipulate the plain text
 
-innerHTML : used to add property to add and remove
+innerHTML : used to add property to add and remove the content along with tahs
+
+*********************
+Events in DOM:
+ - eventa are nothing but actions performed on html elements 
+ - events are of click events, mouse events, key events
+
+ click events :- onClick , ondblclick,onchange
+mouse events:- mouseover,mouseleave
+key events:keydown ,keyup
+
+
+
+
