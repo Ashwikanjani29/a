@@ -79,5 +79,12 @@ mouse events:- mouseover,mouseleave
 key events:keydown ,keyup
 
 
+*************************
+dynamic creation of html element from javascript:
+dynamic ele in jsiwe have methods called as "document.createElement"
+- create 
+
+
+
 
 

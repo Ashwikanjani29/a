@@ -58,11 +58,51 @@
 //     v.style.backgroundColor="blue"
 // })
 
-let inp =document.getElementById("inp");
-inp.addEventListener("keydown",()=>{
-    console.log("hi");
-})
-let inp1 =document.getElementById("inp1");
-inp1.addEventListener("keyup",()=>{
-    console.log("hee");
+// let inp =document.getElementById("inp");
+// inp.addEventListener("keydown",()=>{
+//     console.log("hi");
+// })
+// let inp1 =document.getElementById("inp1");
+// inp1.addEventListener("keyup",()=>{
+//     console.log("hee");
+// })
+
+
+// let bgColor = document.querySelectorAll(".bgColor");
+// console.log(bgColor);
+// [...bgColor].map((element=>{
+//     element.addEventListener("mouseover",()=>{
+
+//         element.style.backgroundColor=element.innerText;
+//     });
+// }))
+
+
+// let ele = document.createElement("hi");
+// ele.innerText="dynamic";
+// ele.id="demo";
+// let image= document.createElement('img');
+// // image.src="./wallpaper 1.jpg";
+// console.log(image);
+// document.body.appendChild(ele);
+// 
+
+
+let form = document.querySelector("form");
+let name=document.getElementById("uName");
+let email=document.getElementsById("uEmail");
+let password=document.getElementById("uPassword");
+
+form.addEventListener("submit",(event)=>{
+    event.preventDefault();
+    // console.log(event);
+    // console.lof("submitted");
+    let uName =name.value;
+    let uEmail = email.value;
+    let uPassword=password.value;
+    let userDetails={
+        uName,uEmail,uPassword
+    }
+    console.log(userDetails);
+    localStorage("userData",JSON.stringify(userDetails))
 })
