@@ -82,9 +82,13 @@ key events:keydown ,keyup
 *************************
 dynamic creation of html element from javascript:
 dynamic ele in jsiwe have methods called as "document.createElement"
-- create 
+- create an attribute we have a method calles as "setAttribute()".
+- to remove attribut we have "removeAttribute()" 
 
 
+
+- any element which is created in javascript will not add directly to documnet,
+we have to add manullay by appendChild
 
 
 
