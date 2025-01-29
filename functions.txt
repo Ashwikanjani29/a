@@ -1,0 +1,42 @@
+Types of functions:-
+____________________
+
+1)).named functions(fun which is invoked using same nMAE)
+2)).anonymus function(FUNCTION WHICH DOES NOT HAVE NAME TO DECLARE NAME AND INVOKING THE NAME)
+-without decalring the function name body it cant be execute
+3)).function expression //csn be called multiple times
+ananymus function declaration is assigned to variable and invoked withe same variable
+let x=function(){
+    console.log("function expression");
+};
+x();
+4)).Immediate invoke function expression //it can call only once
+once function is created it should be invoked immediately
+(function(){
+    console.log("IIFE");
+})
+();
+5)).Arrow function --it is used to concise the normal function syntax
+syntax:-()=>{}
+-it is similar to anonymus function
+let x=()=>{
+    console.log("Arrow function");
+};
+x();
+let x=_=>
+    console.log("Arrow function");
+
+x();
+6.))Higher order function
+-A function which accepts another function as an arguments to its parameter.
+7)).Callback function
+-a function that is passed as an argument to higher order function
+))closure
+-is a memory where functions are bundle together by giving  an accessibility to inner most function to access the variables of the outer most function.
+NOTE:-
+-javascript first name is live Scrip
+-brendeneach
+-current version of javascript is es14.
+-es6-highly used till now
+-es-ECMA script
+ECMA-european computer manufacturing association

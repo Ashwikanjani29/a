@@ -81,14 +81,22 @@ key events:keydown ,keyup
 
 *************************
 dynamic creation of html element from javascript:
-dynamic ele in jsiwe have methods called as "document.createElement"
+dynamic ele in javascript have methods called as "document.createElement"
 - create an attribute we have a method calles as "setAttribute()".
 - to remove attribut we have "removeAttribute()" 
 
-
+preventDefault()-prevent from refreshing page.
 
 - any element which is created in javascript will not add directly to documnet,
 we have to add manullay by appendChild
 
 
+
+
+
+take the array of employee object where each object contains 
+properties such as empid, empname,empcompany,empsalary and 
+empaddress where emp address is further having 2 more properties 
+of object such as empcity and emparea print these properties 
+in the form of a table on ui by using javascript
 
