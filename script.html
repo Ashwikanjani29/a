@@ -43,7 +43,7 @@
         <input type="email" id="email" required>
         
         <label for="password">Password:</label>
-        <input type="password" id="password" required>
+        <input type="password" id="password" pattern="(?=.*[a-zA-Z])(?=.*\d)[A-Za-z\d]{6,}" title="Password must contain at least one letter, one number, and be at least 6 characters long" required>
         
         <label for="confirmPassword">Confirm Password:</label>
         <input type="password" id="confirmPassword" required>
@@ -61,12 +61,15 @@
             const password = document.getElementById("password").value;
             const confirmPassword = document.getElementById("confirmPassword").value;
             
-            if (username === "" || email === "" || !email.includes("@") || password === "" || password !== confirmPassword) {
+            const passwordPattern = /^(?=.*[a-zA-Z])(?=.*\d)[A-Za-z\d]{6,}$/;
+            
+            if (username === "" || email === "" || !email.includes("@") || password === "" || password !== confirmPassword || !passwordPattern.test(password)) {
                 isValid = false;
             }
             
             if (isValid) {
                 alert("Form is submitted successfully");
+                document.getElementById("signupForm").reset();
             }
         });
     </script>
