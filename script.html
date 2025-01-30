@@ -3,11 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Signup Form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label, input, button {
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <h1 id="hello"></h1>
-    <!-- <script src="script1.js"></script> -->
-    <script type="module" src="script2.js"></script>
+    <form id="signupForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" required>
+        
+        <button type="submit">Submit</button>
+    </form>
+    
+    <script>
+        document.getElementById("signupForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            let isValid = true;
+            
+            const username = document.getElementById("username").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("confirmPassword").value;
+            
+            if (username === "" || email === "" || !email.includes("@") || password === "" || password !== confirmPassword) {
+                isValid = false;
+            }
+            
+            if (isValid) {
+                alert("Form is submitted successfully");
+            }
+        });
+    </script>
 </body>
 </html>
