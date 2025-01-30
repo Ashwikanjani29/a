@@ -65,9 +65,10 @@ DOM Methods:
 6.document.querySelectorAll(".class"):selects multiple elemtnts
 
 
-innerText ; is used to manipulate the plain text
+innerText : is used to manipulate the plain text
 
-innerHTML : used to add property to add and remove the content along with tahs
+innerHTML : used to add property to add and remove the 
+			content along with tags
 
 *********************
 Events in DOM:
@@ -100,3 +101,18 @@ empaddress where emp address is further having 2 more properties
 of object such as empcity and emparea print these properties 
 in the form of a table on ui by using javascript
 
+
+
+*****************************************
+Modules:
+import and export to code is Modules to another js file
+
+1.Named Modules: importing should use the same name that you are 
+defining exactly with in{} you can export as many modules of code 
+that you want.
+
+2.Default Modules: while importing can use any name that you want.
+you can export only one modulesof code in one source file. you
+should use the default keyword while exporting
+
+-- Form validations
