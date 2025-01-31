@@ -123,3 +123,34 @@ create a signup form that contains username(!empty), emai; (@,!empty)
 confirm password (same,!empty), once you click on submit button, a
 alert should be popped up on your screen "form is submitted successfully"
 if and only if all the validations are correct.
+
+*************************
+ReactJS:
+-javascript is having librarie and frame work
+libraries: it is a collection of codes.(reactJS,jquery etc)
+framework: it is a collection of libraries
+			-more set of rules.(angular, vuejs,etc)
+***************************
+imp features of raectJS:
+1.ReactJS is a javascript library to build rich reusable user interface.
+2.ReactJS is faster because of "virtual DOM"
+3.React follows component based architecture.
+4.React follows unidirectinal data flow.
+5.React follows both client side rendering and server side rendering.
+
+- React was introduced in 2011 by Facebook
+- Jordan walke.
+- at 2013 React made as a open source
+- React is free and paltform independent.
+
+
+install nodejs
+-- node -v
+ npm install create-react-app --globally
+ mpm init react-app (appname)
+ 
+
+********************************
+
+
+
