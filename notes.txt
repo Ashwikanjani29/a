@@ -1,156 +1,90 @@
+single page application: conatins only one tab any changes also in 1 tab
+no page refreshing and reloading
+multi page application:contains multiple tabs,page refresing,reloading.
+
+- react is a single page application.
+
+virtual DOM:
+- virtualDOM is a virtual representation of a UI which is kept in a memory
+later synced with Real DOM with the help of library called as "ReactDOM"
+
+- the updation of realDOM is with virtualDOM
+- the entire process of updating the realDOM with the help of VDOM is called as"Reconcialation"
+
+*******************
+JSX:
+- JSX stands for javascript and XML
+- JSX is a javascript syntax extension used to create HTML-markup in the react.
+- Actual way to create a element in reacr is by using method called as,
+        -React.craeteElement("tagname",{property:"value"}/null,content/childern)
+
+- JSX is not a part of raect but it is recommend to use in react.
 ***********
-Asynchrnous in javascript:
+Rules of JSX:
+1.every ele irrespective of paired/unpaired tag both most be closed
+ex: <h1></h1>,,<input/>
 
--- to perform multiple task in js
-
-Methods:
-1.setTimeout () - it is a web api .used to perform async operation at spectified time out
-syntax: setTimeOut(callbackfn,timeout)
-
-2.setInterval() : it is a web api .used to perform async operation at 
-syntax: setInterval(callbackfn,timeout)
-
-2.promise - is an object which represents eventual completion.
-	states of promise:
-	1.pending state
-	2.fulfilled state
-	3.promise state
-syntax:-
-	new
-
--actual wat to excetute promise is instance Methods
-	then() :- it is used to excetute 
-	catch():-
-	finally():-
-
-************
-4.async & await:-
-
-async: keyword is used to convert sunc function to async function 
-and start to exectute the promise
-
-await : is used to make the function to wait untill the promise complete.
-************
-note:-by default, js is synchronous(single threaded - can be performed single task at a time).
-
-building blocks og html is tags
+2.more than 1 JSX ele is used then they must be wrapped with one parent class element
+ex:
+<div>
+<section>
 
 
-
-*********************
-DOM:-
-***
-Documet object Model
-
-- used to add,remove,update the content in the HTML documnets.
-- DOM is used to manipulate the content in th HTML document.
-- document is ana object
+*************
+JSX Expression: used to call the the variable,mathematical expression inside the element.
+Syntax:<h1>{variable/expression}</h1>
 
 
-DOM Methods:
-1.documnet.getElementById(""):  it  is used to select the html element based operation
-								"id attribute value.
+************************
+components:
+- components are the files or modules which consiste=s of javascript releated logics which canbe reused.
+1.class based components(CBC)
+2.Functional based components(FBC)
 
-2.document.getElementByClassName(""): it is used to select the html element based on "class attribut; values.
- - class attribute can be used with multiple elements with common value
-
-3.document.getyElentsByTagName(""):it is used to select html element based on tag name.
-
-4.document.getElementByName(""): it is used to select the html elemnet based on": name attribute " value.
-
-- these below methods selects the html elements based on css selector
-5.document.querySelector("id"): selects only one elemet .
-
-
-6.document.querySelectorAll(".class"):selects multiple elemtnts
-
-
-innerText : is used to manipulate the plain text
-
-innerHTML : used to add property to add and remove the 
-			content along with tags
-
-*********************
-Events in DOM:
- - eventa are nothing but actions performed on html elements 
- - events are of click events, mouse events, key events
-
- click events :- onClick , ondblclick,onchange
-mouse events:- mouseover,mouseleave
-key events:keydown ,keyup
+1.class based components(CBC):
+- similar to javascript es6 class.
+- CBC components are statefull coponents.
+syntax: 
+class Person{
+    constructor(name,age){
+        this.name=name;
+        this.age=age;
+    }
+}
+class Child extends Person{
+    constructor(name,age,city){
+        super();
+        this.city=city;
+    }
+}
 
 
-*************************
-dynamic creation of html element from javascript:
-dynamic ele in javascript have methods called as "document.createElement"
-- create an attribute we have a method calles as "setAttribute()".
-- to remove attribut we have "removeAttribute()" 
-
-preventDefault()-prevent from refreshing page.
-
-- any element which is created in javascript will not add directly to documnet,
-we have to add manullay by appendChild
-
+syntax: 
+class App extends React.Component{
+    render(){
+        return(
+            //JSX
+        )
+    }
+}
+export default App;
 
 
+2.Functional based components(FBC)
+- similar to JS functions 
+-FBC is stateless becaues there is no state object until react v16.8
 
+syntax:
+function App(){
+    return(
 
-take the array of employee object where each object contains 
-properties such as empid, empname,empcompany,empsalary and 
-empaddress where emp address is further having 2 more properties 
-of object such as empcity and emparea print these properties 
-in the form of a table on ui by using javascript
+    )
+}
+export default App;
+        or
+const App()=>{
 
+}
 
-
-*****************************************
-Modules:
-import and export to code is Modules to another js file
-
-1.Named Modules: importing should use the same name that you are 
-defining exactly with in{} you can export as many modules of code 
-that you want.
-
-2.Default Modules: while importing can use any name that you want.
-you can export only one modulesof code in one source file. you
-should use the default keyword while exporting
-
--- Form validations
-
-
-
-create a signup form that contains username(!empty), emai; (@,!empty)
-confirm password (same,!empty), once you click on submit button, a
-alert should be popped up on your screen "form is submitted successfully"
-if and only if all the validations are correct.
-
-*************************
-ReactJS:
--javascript is having librarie and frame work
-libraries: it is a collection of codes.(reactJS,jquery etc)
-framework: it is a collection of libraries
-			-more set of rules.(angular, vuejs,etc)
-***************************
-imp features of raectJS:
-1.ReactJS is a javascript library to build rich reusable user interface.
-2.ReactJS is faster because of "virtual DOM"
-3.React follows component based architecture.
-4.React follows unidirectinal data flow.
-5.React follows both client side rendering and server side rendering.
-
-- React was introduced in 2011 by Facebook
-- Jordan walke.
-- at 2013 React made as a open source
-- React is free and paltform independent.
-
-
-install nodejs
--- node -v
- npm install create-react-app --globally
- mpm init react-app (appname)
- 
-
-********************************
-
-
-
+- while creating react component the name capital letters
+-extension of file should be .js or .jsx
