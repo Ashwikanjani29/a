@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 // function App() {
 //   // let e= React.createElement("div",{className:"App"}, 
 //   //   React.createElement("h1",null,"hi"))
@@ -31,9 +31,34 @@ import React from "react";
 // export default App();
 
 //fbc
-function App(){
+// function App(){
+//   return(
+//     <h1>hi</h1>
+//   )
+// }
+// export default App();
+
+
+// !component composition:
+
+import React from "react";
+import Navbar from './components/Navbar';
+import Main from './components/Main';
+import Sidebar from './components/Sidebar';
+import Sidebar1 from'./components/Sidebar1';
+import Footer from './components/Footer';
+
+const App=()=>{
   return(
-    <h1>hi</h1>
+    <div className="app">
+      <Navbar/>
+      <Main/>
+      <div className="sidebar">
+        <Sidebar/>
+        <Sidebar1/>
+      </div>
+      <Footer/>
+    </div>
   )
 }
-export default App();
+export default App

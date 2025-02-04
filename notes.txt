@@ -88,3 +88,8 @@ const App()=>{
 
 - while creating react component the name capital letters
 -extension of file should be .js or .jsx
+
+
+*************
+component composition :
+- component composition is used to 
