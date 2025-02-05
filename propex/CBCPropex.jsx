@@ -5,7 +5,15 @@ export default class CBCPropex extends Component {
     console.log(this);
     return (
       <div>CBCPropex
-        <h1>hello</h1>
+        <h1>{this.props.username}</h1>
+        <h1>{this.props.age}</h1>
+        {
+          this.props.hobbies.map(hobby=>{
+            return<li>{hobby}</li>
+          })
+        }
+        <h1>{this.props.address.city}</h1>
+        <button onClick={this.props.sendFun}>click</button>
       </div>
     )
   }

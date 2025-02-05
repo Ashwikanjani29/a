@@ -100,3 +100,20 @@ props:
 - props is an object.
 - props is an object used to exchange info or data from parent component to child component.
 - 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+rafce-functional component
+rcc- class

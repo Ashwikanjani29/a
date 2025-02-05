@@ -41,7 +41,7 @@
 
 // !component composition:
 
-import React from "react";
+// import React,{Component} from "react";
 // import Navbar from './components/Navbar';
 // import Main from './components/Main';
 // import Sidebar from './components/Sidebar';
@@ -63,12 +63,50 @@ import React from "react";
 // }
 // export default App
 
-import CBCPropex from "./propex/CBCPropex";
+//props
 
-const App=()=>{
+// import React,{Component} from "react";
+// import CBCPropex from "./propex/CBCPropex";
+// import FBCpropex from "./propex/FBCpropex";
+
+// export default class App extends Component{
+//   render(){
+//     return(
+//       // <div>
+//       //   <CBCPropex 
+//       //   username="hi"
+//       //   age={20}
+//       //   hobbies={["playing","reading"]}
+//       //   address={{city:"sricilla",area:"gandinagar"}}
+//       //   sendFun={function(){alert("hello i am aa")}}
+//       //   />
+//       // </div>
+//       <div>
+//         <FBCpropex name="Abhinay" 
+//         isMarried={true}
+//         hobbies={["chatting","reading","playing"]}
+//         />
+//       </div>
+//     )
+//   }
+// }
+
+import React from 'react'
+import PropChildex from './propex/PropChildex'
+import SubChild from './propex/SubChild'
+
+
+const App = () => {
   return (
-    <div>
-      <CBCPropex usename="hi"></CBCPropex>
+    <div>App
+      <PropChildex num={1000}>
+      <h1>hello</h1>
+      <SubChild/>
+      </PropChildex>
+
     </div>
   )
 }
+
+export default App
+
