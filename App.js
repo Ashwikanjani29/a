@@ -91,22 +91,38 @@
 //   }
 // }
 
-import React from 'react'
-import PropChildex from './propex/PropChildex'
-import SubChild from './propex/SubChild'
+// import React from 'react'
+// import PropChildex from './propex/PropChildex'
+// import SubChild from './propex/SubChild'
+// import Child from './propex/Child'
 
+
+// const App = () => {
+//   return (
+//     <div>App
+//       <PropChildex num={1000}>
+//       <h1>hello</h1>
+//       <SubChild/>
+//       <Child/>
+//       </PropChildex>
+
+//     </div>
+//   )
+// }
+
+// export default App
+
+import React from 'react'
+import CBCStateex from './stateexample/CBCStateex'
+import FBCStateex from './stateexample/FBCStateex'
 
 const App = () => {
   return (
-    <div>App
-      <PropChildex num={1000}>
-      <h1>hello</h1>
-      <SubChild/>
-      </PropChildex>
-
+    <div>
+      {/* <CBCStateex/> */}
+      <FBCStateex/>
     </div>
   )
 }
 
 export default App
-
