@@ -141,14 +141,18 @@ basic hooks are:
 
 
 
+Tight Coupling:
+- one is dependent upon abother.
+
+Styling:
+1.External Stlesheet
+2.Inline CSS
+3.Module CSS
 
 
 
 
 
-
-
-
-
-rafce-functional component
+rafce-arrow functional component
 rcc- class
+rcfe- functinal component

@@ -115,12 +115,17 @@
 import React from 'react'
 import CBCStateex from './stateexample/CBCStateex'
 import FBCStateex from './stateexample/FBCStateex'
+import Functional from './components/Functional'
+import './components/Styles.css'
 
 const App = () => {
   return (
     <div>
       {/* <CBCStateex/> */}
-      <FBCStateex/>
+      {/* <FBCStateex/> */}
+      <h1 class='heading'>Ashwikanjani</h1>
+      <Functional clgName='MRU ' city='Hyd' apply={true}/>
+      <h1>hello </h1>
     </div>
   )
 }
