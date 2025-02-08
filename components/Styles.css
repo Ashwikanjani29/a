@@ -3,9 +3,21 @@
     background-color:rgb(245, 220, 238);
 }
 
-
+.heading1{
+    color:rgb(188, 102, 85);
+    background-color:rgb(220, 222, 245);
+}
 .font-style{
     font-size:100px;
     font-family: 'Times New Roman', Times, serif;
 
+}
+.heading3{
+    color:yellow;
+    background-color: blueviolet;
+}
+
+.heading4{
+    color:red;
+    background-color: black;
 }

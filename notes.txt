@@ -138,11 +138,9 @@ basic hooks are:
 2.useEffect()
 3.useContext()
 
-
-
-
+****************
 Tight Coupling:
-- one is dependent upon abother.
+- one is dependent upon another.
 
 Styling:
 1.External Stlesheet
@@ -150,6 +148,12 @@ Styling:
 3.Module CSS
 
 
+*****************************
+controlled components or elements:
+- form handling:
+<form>
+<input type='text'>
+</form>
 
 
 

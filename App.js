@@ -117,15 +117,18 @@ import CBCStateex from './stateexample/CBCStateex'
 import FBCStateex from './stateexample/FBCStateex'
 import Functional from './components/Functional'
 import './components/Styles.css'
+import Assignment from './components/Assignment'
+import MyForm from './components/MyForm'
 
 const App = () => {
   return (
     <div>
       {/* <CBCStateex/> */}
-      {/* <FBCStateex/> */}
-      <h1 class='heading'>Ashwikanjani</h1>
+      {/* <FBCStateex class='heading'/> */}
+      {/* <h1 class='heading'>Ashwikanjani</h1>
       <Functional clgName='MRU ' city='Hyd' apply={true}/>
-      <h1>hello </h1>
+      <h1>hello </h1> */}
+      <MyForm/>
     </div>
   )
 }
