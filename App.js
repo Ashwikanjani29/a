@@ -112,23 +112,33 @@
 
 // export default App
 
+// import React from 'react'
+// import CBCStateex from './stateexample/CBCStateex'
+// import FBCStateex from './stateexample/FBCStateex'
+// import Functional from './components/Functional'
+// import './components/Styles.css'
+// import Assignment from './components/Assignment'
+// import MyForm from './components/MyForm'
+
+// const App = () => {
+//   return (
+//     <div>
+//       {/* <CBCStateex/> */}
+//       {/* <FBCStateex class='heading'/> */}
+//       {/* <h1 class='heading'>Ashwikanjani</h1>
+//       <Functional clgName='MRU ' city='Hyd' apply={true}/>
+//       <h1>hello </h1> */}
+//       <MyForm/>
+//     </div>
+//   )
+// }
 import React from 'react'
-import CBCStateex from './stateexample/CBCStateex'
-import FBCStateex from './stateexample/FBCStateex'
-import Functional from './components/Functional'
-import './components/Styles.css'
-import Assignment from './components/Assignment'
-import MyForm from './components/MyForm'
+import UseEffectex from './HookEx/UseEffectex'
 
 const App = () => {
   return (
     <div>
-      {/* <CBCStateex/> */}
-      {/* <FBCStateex class='heading'/> */}
-      {/* <h1 class='heading'>Ashwikanjani</h1>
-      <Functional clgName='MRU ' city='Hyd' apply={true}/>
-      <h1>hello </h1> */}
-      <MyForm/>
+      <UseEffectex/>
     </div>
   )
 }

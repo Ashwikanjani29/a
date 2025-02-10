@@ -135,8 +135,24 @@ hooks is noyhing but a function which implemnts all the features of class compon
 
 basic hooks are:
 1.useState()
-2.useEffect()
+2.useEffect():
+
+- it allows developers to make neccessry changes or side effects in side the component.
+Syntax:
+useEffect(callbackfn , dependency)
+
+
+
 3.useContext()
+
+
+
+list & keys: every listem items fcrom the array sholud have a unique key prop 
+so that it can track all the changes done in the lists
+*********************
+React,Fragments:
+- this will act as a parent element for jsx elements
+
 
 ****************
 Tight Coupling:
