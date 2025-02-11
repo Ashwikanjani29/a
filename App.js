@@ -132,13 +132,18 @@
 //     </div>
 //   )
 // }
-import React from 'react'
+import React, { Component } from 'react'
 import UseEffectex from './HookEx/UseEffectex'
+import RefEx from './HookEx/RefEx'
+import ContextAPI from './HookEx/ContextAPI'
+import Context1 from './HookEx/Context1'
 
 const App = () => {
   return (
     <div>
-      <UseEffectex/>
+     <ContextAPI>
+      <Context1/>
+     </ContextAPI>
     </div>
   )
 }

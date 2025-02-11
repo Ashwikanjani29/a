@@ -142,8 +142,16 @@ Syntax:
 useEffect(callbackfn , dependency)
 
 
+3.useContext():
+- to avoid props drilling we use context api.
+- this hook is used to pass the data directly to child  component.
+- 
 
-3.useContext()
+
+**************
+4.useRef():
+- ref is used to target native or real DOM elements.
+- using ref makes functionality more easier bt costlier.
 
 
 
